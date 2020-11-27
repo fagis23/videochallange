@@ -36,3 +36,18 @@
     transform: rotate(360deg);
   }
 }
+
+.video-js .vjs-progress-control {
+  /* display: none !important; */
+}
+
+.video-js {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+}
+
+.video-js.vjs-playing .vjs-tech {
+  pointer-events: none;
+}
