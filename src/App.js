@@ -6,23 +6,16 @@ import React, { useState , useEffect} from "react";
 
 function App() {
 const [progress,setProgress] = useState("Not Yet Started")
-// let progressVideo = document.getElementById("progress");
-// let video = document.querySelector("video");
+
   const videoSrc = Video1;
 
-  // function progressLoop() {
-  //   setInterval(function () {
-  //     progressVideo.value = Math.round((video.currentTime / video.duration) * 100);
-  //   });
-  // }
-  
   const onVideoEnd =()=>{
     setProgress("Video Finished")
   }
 
   const onPlay =()=>{
     setProgress("Video On Progress")
-    // progressLoop();
+    
   }
  const onVideoPause=(e)=>{
   e.preventDefault ()
@@ -32,7 +25,7 @@ const [progress,setProgress] = useState("Not Yet Started")
   return (
     <div className="App">
 
-    {/* <progress id="progress" max="100" value="0"></progress> */}
+    
      <h1>Status : {progress}</h1>
      
      <VideoPlayer 
